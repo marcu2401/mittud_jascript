@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mit tud?</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="stilus.css">
+
+</head>
+
+<body>
+    <div class="container" id="keret">
+        <header> 
+            <h1>Mit tud a javascript?</h1>
+        </header>
+        <hr>
+        <article>
+            <button type="button" class="btn btn-light btn-outline-primary" id="datum" onclick="document.getElementById('datum').innerHTML = Date()">Mai dátum és idő megjelenítése</button>
+            <button type="button" class="btn btn-light btn-outline-primary" id="torol" onclick="document.getElementById('datum').innerHTML = 'Mai dátum és idő megjelenítése'">Dátum törlése</button><br>
+            <img src="w3kicsi.png" class="rounded" alt="w3schools">
+
+        </article>
+        <hr>
+
+        <article>
+            <button type="button" class="btn btn-light btn-outline-primary" onclick="document.getElementById('izzo').src='pic_bulboff.gif'">Kapcsold fel!</button>
+            <img src="pic_bulboff.gif" class="" alt="izzo" id="izzo">
+            <button type="button" class="btn btn-light btn-outline-primary" onclick="document.getElementById('izzo').src='pic_bulbon.gif'">Kapcsold le!</button><br>
+            <img src="w3kicsi.png" class="rounded" alt="w3schools">
+
+        </article>
+        <hr>
+        <article>
+            <h1>JavaScript megváltoztatja a HTML elemek stílusát. </h1>
+        <div id="belso">
+        <h2 id="demo">Megváltoztathatod a bekezdésed kinézetét!</h2>
+        </div>
+        <br>
+        <button type="button" class="btn btn-light btn-outline-primary" id="meret" onclick="document.getElementById('demo').style.fontSize='35px'">Betűméret</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="szin" onclick="document.getElementById('demo').style.color='#ff3300'">Betűszín</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="zipus" onclick="document.getElementById('demo').style.fontFamily=('Verdana')">Betűtípus</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="szegely" onclick="document.getElementById('belso').style.border='10px solid'">Szegély</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="bmargo" onclick="document.getElementById('demo').style.padding='15px'">Belső margó</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="kmargo" onclick="document.getElementById('demo').style.margin='20px'">Külső margó</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="hszin" onclick="document.getElementById('belso').style.backgroundColor='#33ff33'">Háttérszín</button>
+
+        <button type="button" class="btn btn-light btn-outline-primary"  onclick="document.getElementById('kulso')">Alaphelyzet</button>
+
+        </article>
+
+        <footer>
+            <img src="w3kicsi.png" class="rounded" alt="w3schools">
+        </footer>
+    </div>
+</body>
+
+</html>

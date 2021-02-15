@@ -12,7 +12,21 @@
     <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="stilus.css">
 
+    <script>
+        function Alaphelyzet(){
+        document.getElementById('demo').style.fontSize='30px';
+        document.getElementById('demo').style.color='rgb(46, 157, 231)';
+        document.getElementById('demo').style.fontFamily='Courier New';
+        document.getElementById('belso').style.border='2px dashed';
+        document.getElementById('demo').style.padding='15px';
+        document.getElementById('demo').style.marginLeft='10px';
+        document.getElementById('demo').style.marginTop='10px';
+        document.getElementById('belso').style.backgroundColor='rgb(238, 195, 125)';
+
+        }
+    </script>
 </head>
+
 
 <body>
     <div class="container" id="keret">
@@ -22,8 +36,10 @@
         <hr>
         <article>
             <button type="button" class="btn btn-light btn-outline-primary" id="datum" onclick="document.getElementById('datum').innerHTML = Date()">Mai dátum és idő megjelenítése</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="torol" onclick="document.getElementById('datum').innerHTML = 'Mai dátum és idő megjelenítése'">Dátum törlése</button><br>
+            <button type="button" class="btn btn-light btn-outline-primary" id="torol" onclick="document.getElementById('datum').innerHTML = 'Mai dátum és idő megjelenítése'">Dátum törlése</button>
+            <br><br>
             <img src="w3kicsi.png" class="rounded-pill img-fluid kep" alt="w3schools">
+
 
         </article>
         <hr>
@@ -42,7 +58,7 @@
         <h2 id="demo">Megváltoztathatod a bekezdésed kinézetét!</h2>
         </div>
         <br>
-        <button type="button" class="btn btn-light btn-outline-primary" id="meret" onclick="document.getElementById('demo').style.fontSize='35px'">Betűméret</button>
+        <button type="button" class="btn btn-light btn-outline-primary" id="meret" onclick="document.getElementById('demo').style.fontSize='45px'">Betűméret</button>
         <button type="button" class="btn btn-light btn-outline-primary" id="szin" onclick="document.getElementById('demo').style.color='#ff3300'">Betűszín</button>
         <button type="button" class="btn btn-light btn-outline-primary" id="zipus" onclick="document.getElementById('demo').style.fontFamily=('Verdana')">Betűtípus</button>
         <button type="button" class="btn btn-light btn-outline-primary" id="szegely" onclick="document.getElementById('belso').style.border='10px solid'">Szegély</button>
@@ -50,10 +66,10 @@
         <button type="button" class="btn btn-light btn-outline-primary" id="kmargo" onclick="document.getElementById('demo').style.margin='20px'">Külső margó</button>
         <button type="button" class="btn btn-light btn-outline-primary" id="hszin" onclick="document.getElementById('belso').style.backgroundColor='#33ff33'">Háttérszín</button>
 
-        <button type="button" class="btn btn-light btn-outline-primary"  onclick="document.getElementById('demo')">Alaphelyzet</button>
+        <button type="button" class="btn btn-light btn-outline-primary"  onclick="Alaphelyzet()">Alaphelyzet</button>
 
         </article>
-
+<br>
         <footer>
             <img src="w3kicsi.png" class="rounded-pill img-fluid kep" alt="w3schools">
         </footer>

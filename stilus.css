@@ -11,7 +11,7 @@ hr{
     width: 80% rgb(165, 164, 164) ;
 }
 #belso{
-    border:dashed rgb(46, 157, 231);
+    border: 2px dashed rgb(46, 157, 231);
     color:rgb(46, 157, 231) ;
     font-size: 30px;
     background-color: rgb(238, 195, 125);
@@ -20,4 +20,8 @@ hr{
 }
 .kep{
     border:green solid 2px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
 }

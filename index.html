@@ -24,6 +24,15 @@
             document.getElementById('belso').style.backgroundColor = 'rgb(238, 195, 125)';
 
         }
+
+        function ejszakai() {
+            var element = document.getElementById('keret');
+            element.classList.toggle("ejszakai");
+        }
+        function nappali() {
+            var element = document.getElementById('keret');
+            element.classList.toggle("nappali");
+        }
     </script>
 </head>
 
@@ -32,11 +41,20 @@
     <div class="container" id="keret">
         <header>
             <h1>Mit tud a javascript?</h1>
+            <div class="d-grid gap-2">
+                <button class="btn  btn-outline-warning"
+                    onclick="alert('Az oldal szerzője: Juhász Márk!')">Szerző</button>
+                <button class="btn  btn-outline-warning" onclick="window.print('asd')">Oldal nyomtatása</button>
+            </div>
+            <br>
+            <button class="btn  btn-outline-primary" onclick="ejszakai()">Éjszakai mód</button>
+            <button class="btn  btn-outline-primary" onclick="nappali()">Nappali mód</button>
         </header>
         <hr>
         <article>
             <button type="button" class="btn btn-light btn-outline-primary" id="datum"
-                onclick="document.getElementById('datum').innerHTML = Date()">Mai dátum és idő megjelenítése</button>
+                onclick="document.getElementById('datum').innerHTML = Date()">Mai dátum és idő
+                megjelenítése</button>
             <button type="button" class="btn btn-light btn-outline-primary" id="torol"
                 onclick="document.getElementById('datum').innerHTML = 'Mai dátum és idő megjelenítése'">Dátum
                 törlése</button>

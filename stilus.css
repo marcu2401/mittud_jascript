@@ -1,3 +1,7 @@
+body {
+    background-color: white;
+    color: #000000;
+  }
 #keret{
 margin: auto;
 border: 5px darkblue solid;
@@ -25,3 +29,13 @@ h2{
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
+.ejszakai{
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+.nappali{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+    

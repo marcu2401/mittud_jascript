@@ -38,70 +38,88 @@
 
 
 <body>
-    <div class="container" id="keret">
+    <div class="container-fluid" id="keret">
         <header>
-            <h1>Mit tud a javascript?</h1>
-            <div class="d-grid gap-2">
-                <button class="btn  btn-outline-warning"
-                    onclick="alert('Az oldal szerzője: Juhász Márk!')">Szerző</button>
-                <button class="btn  btn-outline-warning" onclick="window.print('asd')">Oldal nyomtatása</button>
+            <div class="row">
+                <div class=" col-lg-12 col-xl-12 col-md-12 col-sm-12 col-8">
+                    <div class="d-grid gap-2">
+                        <h1>Mit tud a javascript?</h1>
+                        <button class="btn  btn-outline-warning"
+                            onclick="alert('Az oldal szerzője: Juhász Márk!')">Szerző</button>
+                        <button class="btn  btn-outline-warning" onclick="window.print('asd')">Oldal nyomtatása</button>
+                    </div>
+                </div>
             </div>
-            <br>
-            <button class="btn  btn-outline-primary" onclick="ejszakai()">Éjszakai mód</button>
-            <button class="btn  btn-outline-primary" onclick="nappali()">Nappali mód</button>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-8">
+                    <br>
+                    <button class="btn  btn-outline-primary" onclick="ejszakai()">Éjszakai mód</button>
+                    <button class="btn  btn-outline-primary" onclick="nappali()">Nappali mód</button>
+                </div>
+            </div>
         </header>
         <hr>
         <article>
-            <button type="button" class="btn btn-light btn-outline-primary" id="datum"
-                onclick="document.getElementById('datum').innerHTML = Date()">Mai dátum és idő
-                megjelenítése</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="torol"
-                onclick="document.getElementById('datum').innerHTML = 'Mai dátum és idő megjelenítése'">Dátum
-                törlése</button>
-            <br><br>
-            <img src="w3kicsi.PNG" class="rounded-pill img-fluid kep" alt="w3schools">
-
-
-        </article>
-        <hr>
-
-        <article>
-            <button type="button" class="btn btn-light btn-outline-primary"
-                onclick="document.getElementById('izzo').src='pic_bulbon.gif'">Kapcsold fel!</button>
-            <img src="pic_bulboff.gif" class="" alt="izzo" id="izzo">
-            <button type="button" class="btn btn-light btn-outline-primary"
-                onclick="document.getElementById('izzo').src='pic_bulboff.gif'">Kapcsold le!</button><br>
-            <img src="w3kicsi.PNG" class="rounded-pill img-fluid kep" alt="w3schools">
-
-        </article>
-        <hr>
-        <article>
-            <h1>JavaScript megváltoztatja a HTML elemek stílusát. </h1>
-            <div id="belso">
-                <h2 id="demo">Megváltoztathatod a bekezdésed kinézetét!</h2>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-8">
+                    <button type="button" class="btn btn-light btn-outline-primary" id="datum"
+                        onclick="document.getElementById('datum').innerHTML = Date()">Mai dátum és idő
+                        megjelenítése</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="torol"
+                        onclick="document.getElementById('datum').innerHTML = 'Mai dátum és idő megjelenítése'">Dátum
+                        törlése</button>
+                    <br><br>
+                    <img src="w3kicsi.PNG" class="rounded-pill img-fluid kep img-fluid" alt="w3schools">
+                </div>
             </div>
-            <br>
-            <button type="button" class="btn btn-light btn-outline-primary" id="meret"
-                onclick="document.getElementById('demo').style.fontSize='45px'">Betűméret</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="szin"
-                onclick="document.getElementById('demo').style.color='#ff3300'">Betűszín</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="zipus"
-                onclick="document.getElementById('demo').style.fontFamily=('Verdana')">Betűtípus</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="szegely"
-                onclick="document.getElementById('belso').style.border='10px solid'">Szegély</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="bmargo"
-                onclick="document.getElementById('demo').style.padding='15px'">Belső margó</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="kmargo"
-                onclick="document.getElementById('demo').style.margin='20px'">Külső margó</button>
-            <button type="button" class="btn btn-light btn-outline-primary" id="hszin"
-                onclick="document.getElementById('belso').style.backgroundColor='#33ff33'">Háttérszín</button>
 
-            <button type="button" class="btn btn-light btn-outline-primary" onclick="Alaphelyzet()">Alaphelyzet</button>
+        </article>
+        <hr>
 
+        <article>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-8">
+                    <button type="button" class="btn btn-light btn-outline-primary"
+                        onclick="document.getElementById('izzo').src='pic_bulbon.gif'">Kapcsold fel!</button>
+                    <img src="pic_bulboff.gif" class="img-fluid" alt="izzo" id="izzo">
+                    <button type="button" class="btn btn-light btn-outline-primary"
+                        onclick="document.getElementById('izzo').src='pic_bulboff.gif'">Kapcsold le!</button><br>
+                    <img src="w3kicsi.PNG" class="rounded-pill img-fluid kep img-fluid" alt="w3schools">
+                </div>
+            </div>
+        </article>
+        <hr>
+        <article>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-8">
+                    <h1>JavaScript megváltoztatja a HTML elemek stílusát. </h1>
+                    <div id="belso">
+                        <h2 id="demo">Megváltoztathatod a bekezdésed kinézetét!</h2>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="meret"
+                        onclick="document.getElementById('demo').style.fontSize='45px'">Betűméret</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="szin"
+                        onclick="document.getElementById('demo').style.color='#ff3300'">Betűszín</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="zipus"
+                        onclick="document.getElementById('demo').style.fontFamily=('Verdana')">Betűtípus</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="szegely"
+                        onclick="document.getElementById('belso').style.border='10px solid'">Szegély</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="bmargo"
+                        onclick="document.getElementById('demo').style.padding='15px'">Belső margó</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="kmargo"
+                        onclick="document.getElementById('demo').style.margin='20px'">Külső margó</button>
+                    <button type="button" class="btn btn-light btn-outline-primary" id="hszin"
+                        onclick="document.getElementById('belso').style.backgroundColor='#33ff33'">Háttérszín</button>
+
+                    <button type="button" class="btn btn-light btn-outline-primary"
+                        onclick="Alaphelyzet()">Alaphelyzet</button>
+                </div>
+            </div>
         </article>
         <br>
         <footer>
-            <img src="w3kicsi.PNG" class="rounded-pill img-fluid kep" alt="w3schools">
+            <img src="w3kicsi.PNG" class="rounded-pill img-fluid kep img-fluid" alt="w3schools">
         </footer>
     </div>
 </body>
